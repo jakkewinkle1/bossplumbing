@@ -1,0 +1,211 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-bg.jpg'); /* Background image applied to the whole page */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; /* Makes the background image stay fixed while scrolling */
+}
+
+/* Hero Section */
+#hero {
+    padding: 100px 20px; /* Adjust padding to fit your content */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white; /* Text color for contrast */
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darkened background for header to ensure text stands out */
+    color: white;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    flex: 1;
+    text-align: center;
+}
+
+.logo {
+    max-width: 120px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+.header-text {
+    text-align: center;
+    flex: 3;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #ff6600; /* Ensure visible hover/focus state */
+    outline: none; /* Remove default focus outline for better control */
+}
+
+/* Main Content */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #004d99;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: #e65c00; /* Slightly darker orange for hover effect */
+    outline: none; /* Remove default focus outline for better control */
+}
+
+/* Contact Form Section */
+#contact-form-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency so the background image shows through */
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#contact-form-section h2 {
+    font-size: 2.5em;
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+#contact-form-section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: #e65c00;
+    outline: none; /* Remove default focus outline for better control */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+    outline: none; /* Remove default focus outline for better control */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #contact-form-section {
+        padding: 30px 15px;
+        margin: 30px auto;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .submit-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
